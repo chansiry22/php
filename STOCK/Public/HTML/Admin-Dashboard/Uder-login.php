@@ -18,6 +18,14 @@
             <label for="">address</label>
             <input type="text" class="form-controll">
 
+
+            <label for="">company name</label>
+            <input type="text" class="form-controll">
+            <label for="">date of birth</label>
+            <input type="text" class="form-controll">
+            <label for="">bussiness type</label>
+            <input type="text" class="form-controll">
+
             <button type="submit"></button>
         </form>
     </div>
