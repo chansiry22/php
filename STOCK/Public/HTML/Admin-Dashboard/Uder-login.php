@@ -11,7 +11,13 @@
 <body>
     <div class="container-fluird">
         <form action="" method="post">
+            <label for="">user id</label>
             <input type="text" class="form-controll">
+            <label for="">user name</label>
+            <input type="text" class="form-controll">
+            <label for="">address</label>
+            <input type="text" class="form-controll">
+
             <button type="submit"></button>
         </form>
     </div>
