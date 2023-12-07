@@ -1,0 +1,45 @@
+:root{
+    --primary-color: rgb(0, 204, 255);
+}
+.form{
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(119, 118, 67);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20vh;
+    background: var(--primary-color);
+    width: 300px;
+    height: 300px;
+}
+.title h1{
+    position: relative;
+    margin: auto;
+    top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+}
+.username{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+.username label{
+    margin-right: calc(200px - 65px);
+    font-size: 16px;
+    font-weight: 600;
+}
+.username input{
+    display: flex;
+    margin: auto;
+    text-align: start;
+    align-items: center;
+    width: 200px;
+}
+.btnlogin button{
+    border-radius: 10px;
+    width: 65px;
+    border: none;
+}
