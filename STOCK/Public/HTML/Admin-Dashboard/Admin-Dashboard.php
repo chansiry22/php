@@ -1,5 +1,5 @@
 <?php 
-    include("../Link-Header/Link.php");
+    include("../../config/link.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,9 +64,9 @@
             </div>
             <div class="bottom_content">
                 <li class="">
-                    <a href="">
+                    <a href="../../logout.php">
                         <i class="bx bx-log-out icon"></i>
-                        <span class="text nav-text logout">Logout</span>
+                        <button type="submit" class="text nav-text logout">Logout</button>
                     </a>
                 </li>
                 <li class="mode">
