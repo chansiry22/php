@@ -6,19 +6,21 @@ if(isset($_COOKIE["UserLogin"])) {
     $data = $mysqli->query($fine);
     while($row = mysqli_fetch_assoc($data)) {
         if($_COOKIE["UserLogin"] == $row['user'] . $row['password']) {
-            header("location:../Public/HTML/Admin-Dashboard/Admin-Dahboard.php");
+            header("location:../Public/HTML/Admin-Dashboard/Admin-Dashboard.php");
         }
     }
 } else {
     if(isset($_POST["login"])) {
         $email = $_POST["email"];
         $pass = $_POST["password"];
-        $name = "UserLogin";
-        $value = $email . $pass;
-        setcookie($name, $value, time() + 3600);
-        $sql = "INSERT INTO userlogin VALUES('', '$email', '$pass');";
-        $mysqli->query($sql);
-        header("location:../Public/HTML/Admin-Dashboard/Admin-Dahboard.php");
+        if($email != "" OR $pass != ""){
+            $name = "UserLogin";
+            $value = $email . $pass;
+            setcookie($name, $value, time() + 3600);
+            $sql = "INSERT INTO userlogin VALUES('', '$email', '$pass');";
+            $mysqli->query($sql);
+            header("location:../Public/HTML/Admin-Dashboard/Admin-Dashboard.php");
+        }
     }
 }
 ?>
